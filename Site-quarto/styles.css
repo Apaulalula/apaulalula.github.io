@@ -1,1 +1,101 @@
-/* css styles */
+/* ---------- GENERAL ---------- */
+
+body {
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+
+/* ---------- HERO ---------- */
+
+.hero {
+  max-width: 900px;
+  margin: 5rem auto 6rem auto;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3.8rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.hero h3 {
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* ---------- RESEARCH GRID ---------- */
+
+.research-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin: 2rem 0 4rem 0;
+}
+
+.research-card {
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid #dddddd;
+}
+
+.research-card h3 {
+  margin-top: 0;
+}
+
+
+/* ---------- EXPLORE GRID ---------- */
+
+.explore-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin: 2rem 0 4rem 0;
+}
+
+.explore-card {
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid #dddddd;
+}
+
+.explore-card h3 {
+  margin-top: 0;
+}
+
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 768px) {
+
+  .hero {
+    margin: 3rem 1rem 4rem 1rem;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .research-grid,
+  .explore-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+.profile-image {
+  width: 100%;
+  max-width: 320px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}

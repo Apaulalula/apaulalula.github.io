@@ -1,11 +1,24 @@
 ---
 title: "Ana Paula Lula Costa"
+page-layout: full
 ---
 
-### Ecologist \| Researcher \| Disease Ecology \| One Health
+:::::: hero
+::::: {.columns .v-center}
+::: {.column width="65%"}
+# Ana Paula Lula Costa
 
-Welcome to my personal website.
+### Ecologist · Researcher · Disease Ecology · One Health
 
-I am an ecologist and researcher interested in understanding how biodiversity, ecological interactions and environmental change shape ecological and disease dynamics.
+I am an ecologist interested in understanding how biodiversity, ecological interactions and environmental change shape disease dynamics.
 
-Here you can learn more about my research, projects, publications and scientific outreach.
+My research integrates **community ecology, landscape ecology, ecological networks, eco-evolutionary dynamics and One Health** to investigate how environmental change affects host–parasite interactions and the emergence of infectious diseases.
+
+[Explore my research](research.qmd){.btn .btn-primary} [Get in touch](contact.qmd){.btn .btn-outline-primary}
+:::
+
+::: {.column width="35%"}
+![](images/profile.jpg){.profile-image}
+:::
+:::::
+::::::

@@ -8,14 +8,20 @@ website:
     left:
       - href: index.qmd
         text: Home
+        
       - href: about.qmd
         text: About
+        
       - href: research.qmd
         text: Research
+        
       - href: publications.qmd
         text: Publications
+        
       - href: projects.qmd
         text: Projects
+        
+    right:
       - href: contact.qmd
         text: Contact
 
