@@ -1,0 +1,24 @@
+---
+title: "About me"
+---
+
+I am an ecologist and researcher interested in understanding how biodiversity, ecological interactions and environmental change shape the dynamics of infectious diseases.
+
+My research lies at the intersection of:
+
+- Community Ecology
+- Conservation Biology
+- Disease Ecology
+- Eco-evolutionary Dynamics
+- Landscape Ecology
+- One Health
+
+I am particularly interested in understanding how landscape transformation affects host–parasite interactions and biodiversity, and how these ecological processes can contribute to disease emergence and spillover.
+
+## Background
+
+I hold a degree in Biological Sciences and a Master's and PhD in Ecology and Conservation.
+
+My research experience combines ecological theory, biodiversity conservation, computational methods and disease ecology.
+
+Currently, I work as a postdoctoral researcher developing approaches to understand the effects of environmental change on ecological communities and host–parasite interactions.
