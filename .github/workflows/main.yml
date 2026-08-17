@@ -1,18 +1,19 @@
+name: Publish Quarto Website
+
 on:
   push:
-    branches: main
+    branches:
+      - main
   workflow_dispatch:
 
-name: Publish Quarto Website
+permissions:
+  contents: read
+  pages: write
+  id-token: write
 
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
-
-    permissions:
-      contents: read
-      pages: write
-      id-token: write
 
     environment:
       name: github-pages
@@ -26,12 +27,20 @@ jobs:
         uses: quarto-dev/quarto-actions/setup@v2
 
       - name: Render Quarto Project
-        uses: quarto-dev/quarto-actions/render@v2
+        run: quarto render
+        working-directory: Site-quarto
+
+      - name: Check rendered files
+        run: |
+          echo "Quarto project contents:"
+          ls -la Site-quarto
+          echo "_site contents:"
+          ls -la Site-quarto/_site
 
       - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
-          path: _site/
+          path: Site-quarto/_site
 
       - name: Deploy to GitHub Pages
         id: deployment
