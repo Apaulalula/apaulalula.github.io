@@ -27,12 +27,19 @@ jobs:
         uses: quarto-dev/quarto-actions/setup@v2
 
       - name: Render Quarto Project
-        uses: quarto-dev/quarto-actions/render@v2
+        run: quarto render
+
+      - name: Check rendered files
+        run: |
+          echo "Repository contents:"
+          ls -la
+          echo "_site contents:"
+          ls -la _site
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v4
         with:
-          path: "_site"
+          path: _site
 
       - name: Deploy to GitHub Pages
         id: deployment
