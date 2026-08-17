@@ -19,16 +19,15 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Ana Paula Lula Costa
-email: anapaulalula@gmail.com
-description: >-  Ecologist and researcher working at the intersection of
-  ecology, biodiversity, disease ecology and One Health.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://apaulalula.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-#linkedin_username: jekyllrb
-github_username:  Apaulalula
+email: seu-email@example.com
+description: >-
+  Ecologist | Researcher | Disease Ecology | One Health
 
-# Build settings
-theme: cayman
+baseurl: ""
+url: "https://apaulalula.github.io"
+
+github_username: Apaulalula
+
 plugins:
   - jekyll-feed
 
