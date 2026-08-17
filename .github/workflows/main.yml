@@ -28,18 +28,19 @@ jobs:
 
       - name: Render Quarto Project
         run: quarto render
+        working-directory: Site-quarto
 
       - name: Check rendered files
         run: |
-          echo "Repository contents:"
-          ls -la
+          echo "Quarto project contents:"
+          ls -la Site-quarto
           echo "_site contents:"
-          ls -la _site
+          ls -la Site-quarto/_site
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v4
         with:
-          path: _site
+          path: Site-quarto/_site
 
       - name: Deploy to GitHub Pages
         id: deployment
